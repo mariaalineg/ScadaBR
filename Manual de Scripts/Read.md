@@ -18,22 +18,23 @@ Repositório de apoio ao **Manual de Scripts JavaScript para ScadaBR**, elaborad
 
 ## Estrutura dos exemplos
 
-| Pasta | Seção do Manual | Descrição |
+| Pasta | Capítulo do Manual | Descrição |
 |---|---|---|
-| `cap02-leitura-ponto/` | Seção 2.2 | Data Source Virtual + Script que lê valor e timestamp de um ponto |
-| *(em breve)* | Seção 4 | Escrita em pontos com writeDataPoint |
-| *(em breve)* | Seção 5 | Temporização com while() + Date().getTime() |
+| `cap02-conceitos-fundamentais/` | Cap. 2 — Conceitos Fundamentais | Data Source Virtual + ponto temperatura_sala + script de leitura com `p2.value` e `p2.time` |
+| `cap03-leitura-pontos/` *(em breve)* | Cap. 3 — Leitura de Pontos | Exemplos de pontos calculados e múltiplos sensores |
+| `cap04-escrita-controle/` *(em breve)* | Cap. 4 — Escrita e Controle | Controle liga/desliga com `writeDataPoint` |
+| `cap05-temporizacao/` *(em breve)* | Cap. 5 — Temporização | Set point com pausa usando `while` + `Date().getTime()` |
 
 ---
 
 ## Exemplos disponíveis
 
-### `cap02-leitura-ponto/projeto_temperatura_sala.json`
+### `cap02-conceitos-fundamentais/projeto_temperatura_sala.json`
 
 Cria:
 - **Data Source Virtual** (`DS_245196`) — atualização a cada 5 segundos
-- **Data Point** `temperatura_sala` (`DP_593011`) — numérico, tipo Incremental, min 15°C, max 25°C
-- **Script** `Temperatura` (`SC_183467`) — lê `p2.value` e `p2.time` do ponto
+- **Data Point** `temperatura_sala` (`DP_593011`) — numérico, tipo Incremental, min 15 °C, max 25 °C
+- **Script** `Temperatura` (`SC_183467`) — demonstra adição de ponto ao contexto com variável `p2`, lendo `p2.value` e `p2.time`
 
 ---
 
